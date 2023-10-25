@@ -54,8 +54,7 @@ public class HomeP {
 		 driver.findElement(By.cssSelector("div.card-body")).click();
 		 Thread.sleep(2000);
 		 
-//		 driver.findElement(By.cssSelector("div.header-text")).click();
-//		 Thread.sleep(2000);
+//		 
 		 
 		driver.findElement(By.xpath("//*[@id=\"item-0\"]")).click();
 		Thread.sleep(2000);
@@ -71,34 +70,34 @@ public class HomeP {
 		
 		driver.findElement(By.cssSelector("textarea#permanentAddress")).sendKeys("210, Harinagar-2,Udhna");
 		Thread.sleep(2000);
-		
-		//driver.findElement(By.cssSelector("button#submit")).click();
-		//driver.findElement(By.cssSelector("button.text-right col-md-2 col-sm-12")).click();
-//		driver.findElement(By.id("submit")).click();
-//		Thread.sleep(2000);
-		
-//		driver.findElement(By.xpath("//*[@id=\"item-1\"]")).click();
-//		Thread.sleep(2000);
-		
-		//driver.findElement(By.cssSelector("button#rct-collapse.rct-collapse-btn")).click();
-		//driver.findElement(By.cssSelector("div.check-box-tree-wrapper")).click(); 
-//		Thread.sleep(2000);
-//		for (int i = 0; i <=3; i++) {
-//			driver.findElement(By.id("vfb-6-0"+i)).click();
-//			Thread.sleep(2000);
-//		}
 //		
-		
-//		driver.findElement(By.id("item-2")).click();
-//		Thread.sleep(2000);
-//		for (int i = 0; i <=3; i++) {
-//			driver.findElement(By.id("custom-control-label"+i)).click();
-//			Thread.sleep(2000);
-//		}
+//		//driver.findElement(By.cssSelector("button#submit")).click();
+//		//driver.findElement(By.cssSelector("button.text-right col-md-2 col-sm-12")).click();
+////		driver.findElement(By.id("submit")).click();
+////		Thread.sleep(2000);
+//		
+////		driver.findElement(By.xpath("//*[@id=\"item-1\"]")).click();
+////		Thread.sleep(2000);
+//		
+//		//driver.findElement(By.cssSelector("button#rct-collapse.rct-collapse-btn")).click();
+//		//driver.findElement(By.cssSelector("div.check-box-tree-wrapper")).click(); 
+////		Thread.sleep(2000);
+////		for (int i = 0; i <=3; i++) {
+////			driver.findElement(By.id("vfb-6-0"+i)).click();
+////			Thread.sleep(2000);
+////		}
+////		
+//		
+////		driver.findElement(By.id("item-2")).click();
+////		Thread.sleep(2000);
+////		for (int i = 0; i <=3; i++) {
+////			driver.findElement(By.id("custom-control-label"+i)).click();
+////			Thread.sleep(2000);
+////		}
 		JavascriptExecutor up1=(JavascriptExecutor)driver;
 		 up.executeScript("window.scrollBy(0,500)","");
 		 Thread.sleep(2000);
-		//driver.findElement(By.cssSelector("li.btn btn-light active")).click();
+//		driver.findElement(By.cssSelector("li.btn btn-light active")).click();
 		 driver.findElement(By.id("item-3")).click();
 		Thread.sleep(2000);
 		
@@ -152,10 +151,20 @@ public class HomeP {
 		
 		driver.findElement(By.id("delete-record-1")).click();
 		Thread.sleep(2000);
+//		
+//		//driver.findElement(By.id("item-4")).click();
+////		
+		 driver.findElement(By.cssSelector("div.header-text")).click();
+		 Thread.sleep(2000);
 		
-		//driver.findElement(By.id("item-4")).click();
-		driver.findElement(By.partialLinkText("Links")).click();
-		Thread.sleep(2000);
+//		FORMS--------------------------------------
+		
+		 JavascriptExecutor up2=(JavascriptExecutor)driver;
+		 up.executeScript("window.scrollBy(0,500)","");
+		 Thread.sleep(2000);
+		 driver.findElement(By.cssSelector("span.pr-1")).click();
+		 Thread.sleep(5000);
+		
 		driver.close();
 	}
 }
